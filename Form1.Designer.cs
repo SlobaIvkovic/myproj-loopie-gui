@@ -687,7 +687,7 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.Image = Properties.Resources.logoicon;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(213, 116);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(428, 438);
