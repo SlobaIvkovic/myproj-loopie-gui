@@ -28,32 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonPlaceholder = new Button();
-            label1 = new Label();
+            picStatsClose = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)picStatsClose).BeginInit();
             SuspendLayout();
             // 
-            // buttonPlaceholder
+            // picStatsClose
             // 
-            buttonPlaceholder.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonPlaceholder.ForeColor = Color.Black;
-            buttonPlaceholder.Location = new Point(43, 24);
-            buttonPlaceholder.Name = "buttonPlaceholder";
-            buttonPlaceholder.Size = new Size(75, 60);
-            buttonPlaceholder.TabIndex = 1;
-            buttonPlaceholder.Text = "X";
-            buttonPlaceholder.UseVisualStyleBackColor = true;
-            buttonPlaceholder.Click += buttonPlaceholder_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(211, 33);
-            label1.Name = "label1";
-            label1.Size = new Size(364, 25);
-            label1.TabIndex = 2;
-            label1.Text = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            picStatsClose.BackColor = Color.FromArgb(6, 23, 14);
+            picStatsClose.Image = Properties.Resources.x;
+            picStatsClose.Location = new Point(2, 3);
+            picStatsClose.Name = "picStatsClose";
+            picStatsClose.Size = new Size(28, 30);
+            picStatsClose.SizeMode = PictureBoxSizeMode.CenterImage;
+            picStatsClose.TabIndex = 0;
+            picStatsClose.TabStop = false;
+            picStatsClose.Click += picStatsClose_Click;
+            picStatsClose.MouseEnter += picStatsClose_MouseEnter;
+            picStatsClose.MouseLeave += picStatsClose_MouseLeave;
             // 
             // FormPlaceholder1
             // 
@@ -61,16 +52,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(9, 34, 21);
             ClientSize = new Size(913, 541);
-            Controls.Add(label1);
-            Controls.Add(buttonPlaceholder);
+            Controls.Add(picStatsClose);
             Name = "FormPlaceholder1";
             Text = "FormPlaceholder1";
+            ((System.ComponentModel.ISupportInitialize)picStatsClose).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-        private Button buttonPlaceholder;
-        private Label label1;
+
+        private PictureBox picStatsClose;
     }
 }

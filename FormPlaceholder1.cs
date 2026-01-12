@@ -17,7 +17,17 @@ namespace Loopie_Helper_GUI
             InitializeComponent();
         }
 
-        private void buttonPlaceholder_Click(object sender, EventArgs e)
+        private void picStatsClose_MouseEnter(object sender, EventArgs e)
+        {
+            picStatsClose.BackColor = Color.FromArgb(154, 236, 153);
+        }
+
+        private void picStatsClose_MouseLeave(object sender, EventArgs e)
+        {
+            picStatsClose.BackColor = Color.Transparent;
+        }
+
+        private void picStatsClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
